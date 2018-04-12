@@ -8,6 +8,10 @@ namespace part2.Models
 {
     public class StoreClass : DbContext
     {
+        public StoreClass()
+        {
+        }
+
         //Constructor
         public StoreClass(DbContextOptions<StoreClass>options) : base(options)
         {

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using part2.Models;
 
 namespace part2.Controllers
 {
@@ -11,11 +12,18 @@ namespace part2.Controllers
     [Route("api/Albums")]
     public class AlbumsController : Controller
     {
+        private StoreClass db;
+
+        public AlbumsController(StoreClass db)
+        {
+            this.db = db;
+        }
+
         // GET: api/Albums
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<Album> Get()
         {
-            return new string[] { "value1", "value2" };
+            return db.Albums.ToList();
         }
 
         // GET: api/Albums/5

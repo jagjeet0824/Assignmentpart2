@@ -6,8 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Controllers\AlbumsController.cs" />
+    <Compile Remove="Models\Album.cs" />
+    <Compile Remove="Models\StoreClass.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Data\" />
-    <Folder Include="Models\" />
     <Folder Include="wwwroot\images\" />
   </ItemGroup>
 
