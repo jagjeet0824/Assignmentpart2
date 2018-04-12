@@ -23,7 +23,7 @@ namespace part2.Controllers
         [HttpGet]
         public IEnumerable<Category> Get()
         {
-            return db.Category.ToList();
+            return db.Category_1.ToList();
 
         }
 
