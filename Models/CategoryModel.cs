@@ -14,7 +14,7 @@ namespace part2.Models
         {
 
         }
-        public DbSet<planes> Category { get; set; }
+        public DbSet<Category> Category { get; set; }
         public DbSet<Assignment.Models.Category> Category_1 { get; set; }
 
     }

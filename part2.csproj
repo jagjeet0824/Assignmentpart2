@@ -7,7 +7,9 @@
 
   <ItemGroup>
     <Compile Remove="Controllers\AlbumsController.cs" />
+    <Compile Remove="Controllers\CategoriesController.cs" />
     <Compile Remove="Models\Album.cs" />
+    <Compile Remove="Models\planes.cs" />
     <Compile Remove="Models\StoreClass.cs" />
   </ItemGroup>
 

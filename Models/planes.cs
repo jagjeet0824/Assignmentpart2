@@ -8,7 +8,7 @@ namespace part2.Models
     public class planes
     {
         [Key]
-        public int cost { get; set; }
+        public int Title { get; set; }
 
         [Required]
         public string Planes { get; set; }
